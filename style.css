@@ -1,0 +1,15 @@
+body {
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.gridContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.gridContainer > div {
+    border: 1px solid gray;
+    padding : 2%;
+    margin: 2%;
+}
