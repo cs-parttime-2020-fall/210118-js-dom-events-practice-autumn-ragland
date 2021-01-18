@@ -13,3 +13,12 @@ body {
     padding : 2%;
     margin: 2%;
 }
+
+form > div {
+    margin : 2% 0;
+}
+
+#bookList > div {
+    border-bottom: 1px solid black;
+    padding : 2% 0;
+}
