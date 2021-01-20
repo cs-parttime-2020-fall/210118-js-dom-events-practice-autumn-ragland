@@ -13,11 +13,19 @@ let bookList = document.querySelector("#bookList");
 
 // function to handel event submission
 submitForm = (event) => {
-    event.preventDefault();
-    bookList.innerHTML = bookList.innerHTML + `<div>Title : ${title.value} - Author : ${author.value}`
+    event.preventDefault(); // prevent page from reloading
 
+    // check that form fields are returning what I expect
+    console.log(title.value);
+    console.log(author.value);
+
+    // append new form submission to display element
+    bookList.innerHTML = bookList.innerHTML + `<div>Title : ${title.value} - Author : ${author.value}`;
+
+    // clear form fields
     title.value = "";
     author.value = "";
 }
 
+// add handler for click event to append values
 submitBtn.addEventListener("click", submitForm);
